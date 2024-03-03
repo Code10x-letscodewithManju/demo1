@@ -1,4 +1,139 @@
-hello from remote system
-hello from local repo
-heloo bai
-hello bro 
+
+C:\Users\balra\gitwallah\expno5>git clone https://github.com/Code10x-letscodewithManju/demo1.git
+fatal: destination path 'demo1' already exists and is not an empty directory.
+
+C:\Users\balra\gitwallah\expno5>cd demo1
+
+C:\Users\balra\gitwallah\expno5\demo1>git fetch origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 965 bytes | 120.00 KiB/s, done.
+From https://github.com/Code10x-letscodewithManju/demo1
+   2a360f6..f954b6e  main       -> origin/main
+
+C:\Users\balra\gitwallah\expno5\demo1>git rebase origin/main
+Successfully rebased and updated refs/heads/main.
+
+C:\Users\balra\gitwallah\expno5\demo1>file.txt
+
+C:\Users\balra\gitwallah\expno5\demo1>git add .
+
+C:\Users\balra\gitwallah\expno5\demo1>git commit -m "1st commit "
+[main 4352459] 1st commit
+ 1 file changed, 1 insertion(+)
+
+C:\Users\balra\gitwallah\expno5\demo1>git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Code10x-letscodewithManju/demo1.git
+   f954b6e..4352459  main -> main
+
+C:\Users\balra\gitwallah\expno5\demo1>ls
+README.md  file.txt
+
+C:\Users\balra\gitwallah\expno5\demo1>README.md
+
+C:\Users\balra\gitwallah\expno5\demo1>
+[main 2024-03-03T15:06:58.064Z] update#setState idle
+[main 2024-03-03T15:07:01.354Z] WSL is not installed, so could not detect WSL profiles
+[main 2024-03-03T15:07:14.246Z] Extension host with pid 4720 exited with code: 0, signal: unknown.
+
+
+C:\Users\balra\gitwallah\expno5\demo1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\balra\gitwallah\expno5\demo1>git add .
+
+C:\Users\balra\gitwallah\expno5\demo1>git commit -m "1st commit in readme file"
+[main 06ac704] 1st commit in readme file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\balra\gitwallah\expno5\demo1>git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Code10x-letscodewithManju/demo1.git
+   4352459..06ac704  main -> main
+
+C:\Users\balra\gitwallah\expno5\demo1>git push origin fb
+error: src refspec fb does not match any
+error: failed to push some refs to 'https://github.com/Code10x-letscodewithManju/demo1.git'
+
+C:\Users\balra\gitwallah\expno5\demo1>git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+
+C:\Users\balra\gitwallah\expno5\demo1>git checkout -b fb
+Switched to a new branch 'fb'
+
+C:\Users\balra\gitwallah\expno5\demo1>git status
+On branch fb
+nothing to commit, working tree clean
+
+C:\Users\balra\gitwallah\expno5\demo1>git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 984 bytes | 123.00 KiB/s, done.
+From https://github.com/Code10x-letscodewithManju/demo1
+ * [new branch]      fb         -> origin/fb
+
+C:\Users\balra\gitwallah\expno5\demo1>git status
+On branch fb
+nothing to commit, working tree clean
+
+C:\Users\balra\gitwallah\expno5\demo1>git rebase origin/main
+Current branch fb is up to date.
+
+C:\Users\balra\gitwallah\expno5\demo1>file.txt
+
+C:\Users\balra\gitwallah\expno5\demo1>git fetch origin fb
+From https://github.com/Code10x-letscodewithManju/demo1
+ * branch            fb         -> FETCH_HEAD
+
+C:\Users\balra\gitwallah\expno5\demo1>git status
+On branch fb
+nothing to commit, working tree clean
+
+C:\Users\balra\gitwallah\expno5\demo1>git rebase origin/fb
+Successfully rebased and updated refs/heads/fb.
+
+C:\Users\balra\gitwallah\expno5\demo1>file.txt
+
+C:\Users\balra\gitwallah\expno5\demo1>file.txt
+
+C:\Users\balra\gitwallah\expno5\demo1>git add .
+
+C:\Users\balra\gitwallah\expno5\demo1>git commit -m "commit in fb"
+[fb 94ff61b] commit in fb
+ 1 file changed, 1 insertion(+)
+
+C:\Users\balra\gitwallah\expno5\demo1>git push origin fb
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Code10x-letscodewithManju/demo1.git
+   5c1902e..94ff61b  fb -> fb
+
+C:\Users\balra\gitwallah\expno5\demo1>
